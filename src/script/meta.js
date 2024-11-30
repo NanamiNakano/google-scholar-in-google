@@ -6,4 +6,5 @@
 // @grant       GM_addStyle
 // @version     0.0.1
 // @author      process.env.AUTHOR
+// @license     MIT
 // ==/UserScript==
