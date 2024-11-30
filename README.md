@@ -7,6 +7,8 @@ PR welcome if you want to improve it.
 
 Created from [github:violentmonkey/generator-userscript](https://github.com/violentmonkey/generator-userscript)
 
+[Greasy Fork](https://greasyfork.org/en/scripts/519332-google-scholar-in-google)
+
 ## Development
 
 ``` sh
