@@ -1,23 +1,21 @@
 {
   "name": "google-scholar-in-google",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a",
-  "description": "",
+  "description": "Add \"Scholar\" tab into google.com search result page",
   "author": "Nanami Nakano",
   "license": "MIT",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "prepare": "husky",
     "dev": "rollup -wc",
     "clean": "del-cli dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "ci": "run-s lint",
     "build:js": "rollup -c",
-    "build": "cross-env NODE_ENV=production run-s ci clean build:js"
+    "build": "cross-env NODE_ENV=production run-s clean build:js"
   },
   "dependencies": {
     "@babel/runtime": "^7.26.0"
@@ -31,15 +29,7 @@
     "cross-env": "^7.0.3",
     "del-cli": "^6.0.0",
     "eslint": "^9.16.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
     "read-package-up": "^11.0.0",
     "rollup-plugin-userscript": "^0.3.4"
-  },
-  "lint-staged": {
-    "src/**": [
-      "eslint --fix",
-      "prettier --write"
-    ]
   }
 }

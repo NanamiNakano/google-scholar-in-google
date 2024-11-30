@@ -14,10 +14,6 @@ export default defineConfig(
       ...definePlugins({
         esm: true,
         minimize: false,
-        postcss: {
-          inject: false,
-          minimize: true,
-        },
         extensions: [".ts", ".tsx", ".mjs", ".js", ".jsx"],
       }),
       userscript(meta =>
