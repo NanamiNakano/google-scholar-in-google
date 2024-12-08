@@ -1,3 +1,5 @@
+import styles from "./style.module.scss"
+
 function getSearchText() {
   const searchTextarea = document.querySelector(
     "[aria-label=\"Search\"]",
@@ -36,12 +38,9 @@ try {
   })
   newAnchor.setAttribute("href", url)
 
-  const title = anchor.querySelector("div")
   const newTitle = document.createElement("div")
   newTitle.textContent = "Scholar"
-  Array.from(title.attributes).forEach((attribute) => {
-    newTitle.setAttribute(attribute.name, attribute.value)
-  })
+  newTitle.setAttribute("class", styles.tabTitle)
 
   newAnchor.appendChild(newTitle)
   newTab.appendChild(newAnchor)
