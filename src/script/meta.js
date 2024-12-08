@@ -4,7 +4,7 @@
 // @description This script add "Scholar" link to Google search result page.
 // @match       https://www.google.com/search*
 // @grant       GM_addStyle
-// @version     0.0.1
+// @version     0.0.2
 // @author      process.env.AUTHOR
 // @license     MIT
 // ==/UserScript==
