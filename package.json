@@ -18,7 +18,7 @@
     "build": "cross-env NODE_ENV=production run-s clean build:js"
   },
   "dependencies": {
-    "@babel/runtime": "^7.26.0"
+    "@babel/runtime": "^7.26.10"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
